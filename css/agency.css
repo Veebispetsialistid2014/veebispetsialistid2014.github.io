@@ -860,3 +860,10 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #fed136;
 }
+
+/* let the butchery begin */
+
+.intro-text span {
+	background-color: #333;
+	padding: 0px 15px;
+}
