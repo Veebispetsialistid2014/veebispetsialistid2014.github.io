@@ -585,13 +585,13 @@ video#bgvid {
 position: absolute; right: 0; bottom: 0;
 min-width: 100%; min-height: 100%;
 width: auto; height: auto; z-index: -1000;
-background: url(polina.jpg) no-repeat;
+background: url(img/polina.jpg) no-repeat;
 background-size: cover;
 overflow: hidden;
 }
 
 @media screen and (max-device-width: 800px) {
-html { background: url(img/polina.jpg) #000 no-repeat center center fixed; }
+header.frontpage { background: url(img/polina.jpg) #000 no-repeat center center fixed; }
 #bgvid { display: none; }
 }
 

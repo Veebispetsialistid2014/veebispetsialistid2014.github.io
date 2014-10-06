@@ -273,7 +273,6 @@ header.frontpage {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    height: 100vh; overflow: hidden;
 }
 
 header.frontpage .intro-text {
@@ -299,6 +298,12 @@ header.frontpage .intro-text .intro-heading {
 }
 
 @media(min-width:768px) {
+	header.frontpage {
+	height: 100vh; 
+    overflow: hidden;
+
+	}
+
     header.frontpage .intro-text {
         padding-top: 200px;
         padding-bottom: 1px;
@@ -634,9 +639,15 @@ section h3.section-subheading {
     text-align: center;
 }
 
-.team-member img {
+/*.team-member img, .team-member video*/
+.team-member-video {
     margin: 0 auto;
     border: 7px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    
 }
 
 .team-member h4 {
@@ -882,4 +893,9 @@ article.singlepost {
 
 #disqus_thread {
 	margin: 0px 50px;
+}
+
+.intro-lead-in img {
+	max-width: 414px;
+width: 100%;
 }

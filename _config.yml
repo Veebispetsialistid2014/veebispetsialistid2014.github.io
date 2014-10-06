@@ -16,7 +16,7 @@ color:
 
 people:
 - name: Github Octocat The Third
-  pic: octocat
+  pic: polina
   position: Lead Designer
   social:
     - title: twitter
@@ -50,7 +50,7 @@ people:
       url: #
 
 - name: Kay Garland
-  pic: 1
+  pic: garland
   position: Lead Designer
   social:
     - title: twitter
@@ -61,7 +61,7 @@ people:
       url: #
 
 - name: Larry Parker
-  pic: 2
+  pic: parker
   position: Lead Marketer
   social:
     - title: twitter
@@ -72,7 +72,7 @@ people:
       url: #
 
 - name: Diana Petersen
-  pic: 3
+  pic: diana
   position: Lead Developer
   social:
     - title: twitter
