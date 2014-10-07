@@ -14,7 +14,7 @@
                    
                         <div class="team-member-video">
                         
-	                        <video preload="none" loop="loop" poster="img/team/{{ member.pic }}.jpg" id="{{ member.pic }}" width="300" height="300" onMouseOver="{{ member.pic }}.play()" onMouseOut="{{ member.pic }}.pause()" onclick="window.location='img/team/{{ member.pic }}.mp4';{{ member.pic }}.pause()">
+	                        <video preload="none" loop="loop" poster="img/team/{{ member.pic }}.jpg" id="{{ member.pic }}" width="300" onMouseOver="{{ member.pic }}.play()" onMouseOut="{{ member.pic }}.pause()" onclick="window.location='img/team/{{ member.pic }}.mp4';{{ member.pic }}.pause()">
 							<source src="img/team/{{ member.pic }}.mp4" type="video/mp4">
 							</video>
                         </div>
@@ -39,3 +39,17 @@
             </div>
         </div>
     </section>
+    
+    <script type="text/javascript">
+function hideVideo(e)
+{
+    if(e.target == vid)
+    {
+        vid.pause();
+        var poster = $(vid).attr("poster");
+        $(vid).attr("poster", "");
+        $(vid).attr("poster", poster);
+    }
+
+}
+    </script>
