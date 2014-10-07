@@ -645,9 +645,17 @@ section h3.section-subheading {
     border: 7px solid #fff;
     border-radius: 50%;
     overflow: hidden;
-    height: 300px;
-    width: 300px;
-    
+    height: 200px;
+    width: 200px;
+    -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.team-member-video video {
+	  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: -125px;
+  left: -125px;
 }
 
 .team-member h4 {
