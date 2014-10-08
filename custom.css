@@ -601,3 +601,9 @@ header.frontpage { background: url(img/polina.jpg) #000 no-repeat center center 
 	text-shadow: 4px 4px #111;
 	color: #eee;
 }
+
+/*Small adj*/
+
+.fa-inverse {
+	color: #333 !important;
+}
