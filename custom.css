@@ -588,6 +588,8 @@ width: auto; height: auto; z-index: -1000;
 background: url(img/polina.jpg) no-repeat;
 background-size: cover;
 overflow: hidden;
+	    filter:blur(5px);
+    -webkit-filter:blur(5px);
 }
 
 @media screen and (max-device-width: 800px) {
@@ -606,4 +608,16 @@ header.frontpage { background: url(img/polina.jpg) #000 no-repeat center center 
 
 .fa-inverse {
 	color: #333 !important;
+}
+
+@media(min-width:1200px) {
+.story_end i {
+	font-size: 200px;
+}
+}
+
+@media(max-width:768px) {
+	iframe {
+		width: 100%;
+	}
 }

@@ -652,9 +652,10 @@ section h3.section-subheading {
     overflow: hidden;
     width: 300px;
     height: 300px;
+
 }
 .team-member-video video {
-	
+
 }
 
 .team-member h4 {
@@ -890,7 +891,7 @@ body {
 }
 
 article.singlepost {
-	padding:70px 60px;
+	padding:10%;
 	margin-top:60px;
 }
 
