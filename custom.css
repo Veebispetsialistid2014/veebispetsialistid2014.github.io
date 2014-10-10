@@ -621,3 +621,7 @@ header.frontpage { background: url(img/polina.jpg) #000 no-repeat center center 
 		width: 100%;
 	}
 }
+
+#gmaps {
+	padding: 0px;
+}
