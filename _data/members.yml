@@ -1,0 +1,101 @@
+
+- name: Github Octocat The Third
+  shortname: polina
+  pic: polina
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: stack-overflow
+      url: #
+    - title: github
+      url: blog2
+
+
+- name: John Octocat
+  pic: octocat
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+      
+- name: Sean Octocat
+  pic: octocat
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+- name: Kay Garland
+  pic: garland
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+- name: Larry Parker
+  pic: parker
+  position: Lead Marketer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Diana Petersen
+  pic: diana
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+- name: Diana Petersen
+  pic: octocat
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+- name: Diana Petersen
+  pic: octocat
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+      
+- name: Ott Tooming
+  pic: ott
+  twitter: ott.tooming
+  position: Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    

@@ -4,7 +4,7 @@ layout: post
 date: 2014-09-27
 category: blog
 thumbnail: startup-framework-thumbnail.png
-
+outsideimage: http://i.imgur.com/j2LDHX0.png
 
 ---
 ### Second post
@@ -20,94 +20,8 @@ Praesent eget commodo magna, et consequat ipsum. Vestibulum fermentum ultrices s
 Donec a urna in dolor tempor vulputate id a est. Suspendisse diam ante, sodales eget enim nec, hendrerit pretium leo. Nulla facilisi. In eleifend sapien nec faucibus sollicitudin. Integer eu odio lectus. Vestibulum ultricies odio ex, et dapibus mauris vestibulum finibus. Fusce vel quam semper, sodales lectus id, facilisis ipsum. Nunc ultricies ante nulla, non rutrum ante semper eu. Pellentesque laoreet finibus nisi, eu suscipit ante finibus ac. Nunc pulvinar odio est, sed ultricies lectus dictum sed. Nulla id vehicula dolor. Quisque nec purus ut felis eleifend sollicitudin nec ut nibh. Cras tellus est, aliquam vel pharetra vel, mattis non neque. Nam ornare enim dolor. Sed quis dictum augue.
 
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/0HxpQCcqhms?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/XRAfu/embed"></iframe>
+
 
 ![My helpful screenshot]({{ site.url }}/img/blog/1.jpg)
 
-{% highlight python linenos %}
-
-# Koostada programm, mida saab kasutada arvutamiseks tordi valmistamiseks: 
-# Tuleb ette defineerida jargmised muutujad 
-# ning lubada kasutajale sisestada nende vaartused 
-# Vaartused maara nii et nad oleks ikka reaalsed: 
-# Naiteks kupsise laius ja pikkus voivad olla 5 * 5 cm): 
-#
-# 1. Kandiku pikkus ja laius (cm); 
-#
-# 2. Kupsise pikkus ja laius (cm); 
-#
-# 3. Kupsiste arv pakkis; 
-#
-# 4. Palju kupsiste kihti tuleb tordil; 
-#
-# Programm peab arvutama palju kupsiste pakke laheb vaja antud tordi valmistamiseks. 
-# Koik vaartused valjastada koos selgitava tekstiga. Programm peab olema 
-# kommenteeritud. Lahenduse esitamiseks saada fail nimega eesnimi_perenimi_tort.py aadressile anna.karutina@khk.ee, kirja teemaks pane VS14_ise1
-
-
-#########################
-#						#
-# Start of program 		#
-#						#
-#########################
-
-
-# Kandiku suurus
-
-tray_width = raw_input("Kandiku laius: ")
-tray_width = float(tray_width)
-tray_height = raw_input("Kandiku pikkus: ")
-tray_height = float(tray_height)
-
-tray_area = tray_width * tray_height
-
-
-# Yksiku kypsise suurus
-
-biscuit_width = raw_input("Kypsise laius: ")
-biscuit_width = float(biscuit_width)
-biscuit_height = raw_input("Kypsise pikkus: ")
-biscuit_height = float(biscuit_height)
-
-biscuit_area = biscuit_width * biscuit_height
-
-
-# Kysida kypsiste arvu pakis ja kihtide arvu tordil
-
-biscuit_pack = raw_input("Kypsiste arv pakis: ")
-biscuit_pack = int(biscuit_pack)
-
-cake_layers = raw_input("Kihtide arv tordil: ")
-cake_layers = int(cake_layers) 
-
-
-# Arvuta tordi k2igi kihtide kogupindala
-
-cake_area = tray_area * cake_layers
-
-
-# Arvuta kypsiste kulu
-
-biscuit_amount = cake_area / float(biscuit_area)
-
-
-# Arvuta vajalike kypsisepakkide arv
-
-biscuit_pack_requirement = float(biscuit_amount) / biscuit_pack
-biscuit_pack_requirement = round(biscuit_pack_requirement, 1)
-
-
-# Teavita kasutajat vajalikust informatsioonist
-
-print("Kypsisetorid suurus tuleb " + str(tray_width) + "cm korda " + str(tray_height) + "cm, ehk " + str(tray_area) + "cm2." )
-
-print("Kasutades kypsiseid suurusega " + str(biscuit_width) + "cm korda " + str(biscuit_height) + "cm (pindala " + str(biscuit_area) + "cm2), sii laheb valmistamiseks vaja " + str(biscuit_pack_requirement) + " pakki kypsiseid, kui arvestada, et igas pakis on " + str(biscuit_pack) + " kypsist ja tordil tuleb " + str(cake_layers) + " kihti.")
-
-#########################
-#						#
-# End of program		#
-#						#
-#########################
-
-
-{% endhighlight %}

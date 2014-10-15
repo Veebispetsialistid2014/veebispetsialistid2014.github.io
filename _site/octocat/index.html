@@ -11,21 +11,23 @@
 
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/custom.css">
+    <link rel="stylesheet" href="/css/custom.css">
 
 	<!-- Custom CSS -->
-    <link rel="stylesheet" href="/syntax.css">
+    <link rel="stylesheet" href="/css/syntax.css">
 
 	<!-- font-awesome-animation.min CSS -->
-    <link rel="stylesheet" href="/font-awesome-animation.min.css">
+    <link rel="stylesheet" href="/css/font-awesome-animation.min.css">
 
+	<!-- font-awesome-animation.min CSS -->
+    <link rel="stylesheet" href="/css/animate.css">
 
-
-    <!-- Custom Fonts -->
+    <!-- Font awesome -->
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
+    
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -85,7 +87,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
     <!-- Services Section -->
     <section id="services">
         <div class="container">
@@ -485,8 +486,6 @@
                             
                             <li><a href=""><i class="fa fa-facebook"></i></a>
                             
-                            <li><a href=""><i class="fa fa-google-plus"></i></a>
-                            
 
                         </ul>
                     </div>
@@ -638,11 +637,15 @@ function hideVideo(e)
                             <h2>Videos</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p><h3 id="videos">Videos</h3>
+                            <p><blockquote>
+  <p>YouTube is a video-sharing website headquartered in San Bruno, California. The service was created by three former PayPal employees in February 2005 and has been owned by Google since late 2006.</p>
+</blockquote>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/FtqNwcmRTXk?showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 <iframe width="560" height="315" src="//www.youtube.com/embed/cKc7jTwqyS8?list=FL7hnjGEx3UHvvetaagMcCFA&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 <iframe width="560" height="315" src="//www.youtube.com/embed/wlFcH6asu1k?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/iCAe0/embed"></iframe>
 </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -830,92 +833,10 @@ function hideVideo(e)
 
 <p>Donec a urna in dolor tempor vulputate id a est. Suspendisse diam ante, sodales eget enim nec, hendrerit pretium leo. Nulla facilisi. In eleifend sapien nec faucibus sollicitudin. Integer eu odio lectus. Vestibulum ultricies odio ex, et dapibus mauris vestibulum finibus. Fusce vel quam semper, sodales lectus id, facilisis ipsum. Nunc ultricies ante nulla, non rutrum ante semper eu. Pellentesque laoreet finibus nisi, eu suscipit ante finibus ac. Nunc pulvinar odio est, sed ultricies lectus dictum sed. Nulla id vehicula dolor. Quisque nec purus ut felis eleifend sollicitudin nec ut nibh. Cras tellus est, aliquam vel pharetra vel, mattis non neque. Nam ornare enim dolor. Sed quis dictum augue.</p>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/0HxpQCcqhms?rel=0" frameborder="0" allowfullscreen=""></iframe>
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/XRAfu/embed"></iframe>
 
 <p><img src="https://veebispetsialistid2014.github.io/img/blog/1.jpg" alt="My helpful screenshot" /></p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="lineno"> 1</span> <span class="c"># Koostada programm, mida saab kasutada arvutamiseks tordi valmistamiseks: </span>
-<span class="lineno"> 2</span> <span class="c"># Tuleb ette defineerida jargmised muutujad </span>
-<span class="lineno"> 3</span> <span class="c"># ning lubada kasutajale sisestada nende vaartused </span>
-<span class="lineno"> 4</span> <span class="c"># Vaartused maara nii et nad oleks ikka reaalsed: </span>
-<span class="lineno"> 5</span> <span class="c"># Naiteks kupsise laius ja pikkus voivad olla 5 * 5 cm): </span>
-<span class="lineno"> 6</span> <span class="c">#</span>
-<span class="lineno"> 7</span> <span class="c"># 1. Kandiku pikkus ja laius (cm); </span>
-<span class="lineno"> 8</span> <span class="c">#</span>
-<span class="lineno"> 9</span> <span class="c"># 2. Kupsise pikkus ja laius (cm); </span>
-<span class="lineno">10</span> <span class="c">#</span>
-<span class="lineno">11</span> <span class="c"># 3. Kupsiste arv pakkis; </span>
-<span class="lineno">12</span> <span class="c">#</span>
-<span class="lineno">13</span> <span class="c"># 4. Palju kupsiste kihti tuleb tordil; </span>
-<span class="lineno">14</span> <span class="c">#</span>
-<span class="lineno">15</span> <span class="c"># Programm peab arvutama palju kupsiste pakke laheb vaja antud tordi valmistamiseks. </span>
-<span class="lineno">16</span> <span class="c"># Koik vaartused valjastada koos selgitava tekstiga. Programm peab olema </span>
-<span class="lineno">17</span> <span class="c"># kommenteeritud. Lahenduse esitamiseks saada fail nimega eesnimi_perenimi_tort.py aadressile anna.karutina@khk.ee, kirja teemaks pane VS14_ise1</span>
-<span class="lineno">18</span> 
-<span class="lineno">19</span> 
-<span class="lineno">20</span> <span class="c">#########################</span>
-<span class="lineno">21</span> <span class="c">#						#</span>
-<span class="lineno">22</span> <span class="c"># Start of program 		#</span>
-<span class="lineno">23</span> <span class="c">#						#</span>
-<span class="lineno">24</span> <span class="c">#########################</span>
-<span class="lineno">25</span> 
-<span class="lineno">26</span> 
-<span class="lineno">27</span> <span class="c"># Kandiku suurus</span>
-<span class="lineno">28</span> 
-<span class="lineno">29</span> <span class="n">tray_width</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Kandiku laius: &quot;</span><span class="p">)</span>
-<span class="lineno">30</span> <span class="n">tray_width</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">tray_width</span><span class="p">)</span>
-<span class="lineno">31</span> <span class="n">tray_height</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Kandiku pikkus: &quot;</span><span class="p">)</span>
-<span class="lineno">32</span> <span class="n">tray_height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">tray_height</span><span class="p">)</span>
-<span class="lineno">33</span> 
-<span class="lineno">34</span> <span class="n">tray_area</span> <span class="o">=</span> <span class="n">tray_width</span> <span class="o">*</span> <span class="n">tray_height</span>
-<span class="lineno">35</span> 
-<span class="lineno">36</span> 
-<span class="lineno">37</span> <span class="c"># Yksiku kypsise suurus</span>
-<span class="lineno">38</span> 
-<span class="lineno">39</span> <span class="n">biscuit_width</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Kypsise laius: &quot;</span><span class="p">)</span>
-<span class="lineno">40</span> <span class="n">biscuit_width</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">biscuit_width</span><span class="p">)</span>
-<span class="lineno">41</span> <span class="n">biscuit_height</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Kypsise pikkus: &quot;</span><span class="p">)</span>
-<span class="lineno">42</span> <span class="n">biscuit_height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">biscuit_height</span><span class="p">)</span>
-<span class="lineno">43</span> 
-<span class="lineno">44</span> <span class="n">biscuit_area</span> <span class="o">=</span> <span class="n">biscuit_width</span> <span class="o">*</span> <span class="n">biscuit_height</span>
-<span class="lineno">45</span> 
-<span class="lineno">46</span> 
-<span class="lineno">47</span> <span class="c"># Kysida kypsiste arvu pakis ja kihtide arvu tordil</span>
-<span class="lineno">48</span> 
-<span class="lineno">49</span> <span class="n">biscuit_pack</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Kypsiste arv pakis: &quot;</span><span class="p">)</span>
-<span class="lineno">50</span> <span class="n">biscuit_pack</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">biscuit_pack</span><span class="p">)</span>
-<span class="lineno">51</span> 
-<span class="lineno">52</span> <span class="n">cake_layers</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s">&quot;Kihtide arv tordil: &quot;</span><span class="p">)</span>
-<span class="lineno">53</span> <span class="n">cake_layers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">cake_layers</span><span class="p">)</span> 
-<span class="lineno">54</span> 
-<span class="lineno">55</span> 
-<span class="lineno">56</span> <span class="c"># Arvuta tordi k2igi kihtide kogupindala</span>
-<span class="lineno">57</span> 
-<span class="lineno">58</span> <span class="n">cake_area</span> <span class="o">=</span> <span class="n">tray_area</span> <span class="o">*</span> <span class="n">cake_layers</span>
-<span class="lineno">59</span> 
-<span class="lineno">60</span> 
-<span class="lineno">61</span> <span class="c"># Arvuta kypsiste kulu</span>
-<span class="lineno">62</span> 
-<span class="lineno">63</span> <span class="n">biscuit_amount</span> <span class="o">=</span> <span class="n">cake_area</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">biscuit_area</span><span class="p">)</span>
-<span class="lineno">64</span> 
-<span class="lineno">65</span> 
-<span class="lineno">66</span> <span class="c"># Arvuta vajalike kypsisepakkide arv</span>
-<span class="lineno">67</span> 
-<span class="lineno">68</span> <span class="n">biscuit_pack_requirement</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">biscuit_amount</span><span class="p">)</span> <span class="o">/</span> <span class="n">biscuit_pack</span>
-<span class="lineno">69</span> <span class="n">biscuit_pack_requirement</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">biscuit_pack_requirement</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="lineno">70</span> 
-<span class="lineno">71</span> 
-<span class="lineno">72</span> <span class="c"># Teavita kasutajat vajalikust informatsioonist</span>
-<span class="lineno">73</span> 
-<span class="lineno">74</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Kypsisetorid suurus tuleb &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tray_width</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;cm korda &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tray_height</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;cm, ehk &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">tray_area</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;cm2.&quot;</span> <span class="p">)</span>
-<span class="lineno">75</span> 
-<span class="lineno">76</span> <span class="k">print</span><span class="p">(</span><span class="s">&quot;Kasutades kypsiseid suurusega &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">biscuit_width</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;cm korda &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">biscuit_height</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;cm (pindala &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">biscuit_area</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;cm2), sii laheb valmistamiseks vaja &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">biscuit_pack_requirement</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; pakki kypsiseid, kui arvestada, et igas pakis on &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">biscuit_pack</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; kypsist ja tordil tuleb &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cake_layers</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot; kihti.&quot;</span><span class="p">)</span>
-<span class="lineno">77</span> 
-<span class="lineno">78</span> <span class="c">#########################</span>
-<span class="lineno">79</span> <span class="c">#						#</span>
-<span class="lineno">80</span> <span class="c"># End of program		#</span>
-<span class="lineno">81</span> <span class="c">#						#</span>
-<span class="lineno">82</span> <span class="c">#########################</span></code></pre></div>
 </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -1502,10 +1423,13 @@ function hideVideo(e)
                             <h2>My first post</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/" class="img-responsive img-centered" alt="">
-                            <p><h3 id="this-is-the-first-post-on-this-blog">This is the first post on this blog</h3>
+                            <p><blockquote>
+  <p>Blockquotes are handy</p>
 
-<p>Hello world.</p>
+  <p>“This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can <em>put</em> <strong>Markdown</strong> into a blockquote.”</p>
+</blockquote>
 
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/OfuiC/embed"></iframe>
 </p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -1547,6 +1471,13 @@ function hideVideo(e)
 
     <!-- Custom Theme JavaScript -->
     <script src="/js/agency.js"></script>
+
+	<!-- smootState Theme JavaScript -->
+    <script src="/js/jquery.smoothState.js"></script>
+    <script src="/js/functions.js"></script>
+
+    <!-- velocity.min.js -->
+    <script src="/js/velocity.min.js"></script>
 
 
     </body>

@@ -22,7 +22,7 @@
 			class="parallax-image parallax-image-100"
 			style="background-image:url(img/kitteh1.jpg)"
 			data-anchor-target="#dragons + .gap"
-			data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+			data-bottom-top="transform: translate3d(0px, -100%, 0px);"
 			data-top-bottom="transform: translate3d(0px, 80%, 0px);"
 		></div>
 		<!--the +/-80% translation can be adjusted to control the speed difference of the image-->
@@ -80,6 +80,7 @@
 		We position the images fixed and therefore need to place them outside of #skrollr-body.
 		We will then use data-anchor-target to display the correct image matching the current section (.gap element).
 	-->
+	
 		        {% include header.html %}
 
 <div id="skrollr-body">
@@ -104,8 +105,6 @@
        {% include services_school.html %}
 
 
-
-    
 		</div>
 		<div class="gap gap-50" style="background-image:url(img/kitteh3.jpg);"></div>
 		<div class="content" id="portfolio">
@@ -150,6 +149,12 @@
     smoothScrolling:true
 });    
     </script>
+    
+
+    
+    
+    
+
     
     </body>
 </html>

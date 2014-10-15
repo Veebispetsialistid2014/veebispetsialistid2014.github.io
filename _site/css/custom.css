@@ -625,3 +625,26 @@ header.frontpage { background: url(img/polina.jpg) #000 no-repeat center center 
 #gmaps {
 	padding: 0px;
 }
+
+.box {
+		position:absolute;
+		left:0;
+		height:100%;
+		background:#09f;
+	}
+	
+
+/* Bootstrap override */
+
+blockquote {
+	font-style: italic;
+font-size: 25px;
+font-family: Georgia;
+border-left: 0;
+}
+
+.metainformation span {
+	color: #FC5253;
+	font-weight: bold;
+	font-style: italic;
+}

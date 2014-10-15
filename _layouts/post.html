@@ -7,21 +7,33 @@
     <body id="page-top" class="index">
 
     {% include header_post.html %}
+    
+            	<img src="{{ page.outsideimage }}" class="img-responsive"></img>
+
  <article class="singlepost">
         <header class="post">
             <h1>{{ page.title }}</h1>
+            <div class="metainformation">
             <span class="text-muted"><time datetime="{{page.date|date:"%F"}}">{{page.date| date: "%b %-d, %Y" }}</time></span><br/>
-            <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/>
-            <span class="author"><i class="icon-user"></i> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span>
+			<span class="category"><i class="icon-tag"></i> {{ page.tagged | tagged_links }}</span><br/>
+
+            </div>
         </header>
 
         <div class="entry">{{ content }}</div>
+
+<div class="test_author">
+    {% include author-bio.html %}
+ </div>
 
         <footer>
         <a class="page-scroll btn btn-xl" href="javascript: history.go(-1)"> Tagasi eelmisele lehele</a>
         <!-- additional info --></footer>
 
 </article>
+
+
+
 
     <div id="disqus_thread"></div>
     <script type="text/javascript">
